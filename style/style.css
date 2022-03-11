@@ -1,655 +1,458 @@
 body {
-    margin:0;
-    padding:0;
-  }
+  margin: 0;
+  padding: 0; }
 
-  
-
+/* -Variables colores-  */
 /* -Header-  */
-
 header nav {
-    background-color: #FCC022;
-    height: 100px;
-    width: 100vw;
-    max-width: 100%;   
+  background-color: #FCC022;
+  height: 100px;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header nav ul {
+    box-sizing: content-box;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    
-}
-
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1opx;
+    align-items: center; }
+    header nav ul li a {
+      color: #7B4F1F;
+      margin-right: 3vw;
+      text-decoration: none; }
 
 .logo {
-    width: 15vw;
+  width: 15vw;
+  height: auto;
+  margin-right: 60px;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: inline-blocbk; }
+
+/* -Main-index desktop - mas de 600px*/
+#PadreGrid {
+  display: grid;
+  grid-template-areas: "TextoPresentacion  ImagenPrincipal" "TituloTalleres TituloTalleres" "Talleres Talleres";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 7% 43%;
+  height: 1000px;
+  background-color: #71A38C; }
+
+#Presentacion1 {
+  grid-area: TextoPresentacion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F67924; }
+
+.TituloHome {
+  font-weight: bold;
+  color: #F9D473;
+  font-size: calc(18px + 2vw);
+  margin-bottom: 20px; }
+
+.SubTituloHome {
+  color: #F9D473;
+  font-weight: bold;
+  font-size: calc(14px + 1vw);
+  margin-bottom: 30px;
+  text-align: center; }
+
+.TextoIntroduccion {
+  width: 70%;
+  text-align: center;
+  margin-top: 30px;
+  color: #F9D473;
+  font-size: calc(10px + 1vw); }
+
+#Presentacion2 {
+  grid-area: ImagenPrincipal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F67924; }
+
+.Imagen1 {
+  width: 55%;
+  height: auto; }
+
+#ImagenTaller {
+  grid-area: Talleres;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px; }
+
+.taller {
+  width: 90%;
+  height: auto; }
+
+#TallerconDescripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#Talleres1 {
+  grid-area: TituloTalleres;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px; }
+
+#DescripcionTaller {
+  color: #00657E;
+  font-size: calc(13px + 1vw); }
+
+#TituloTalleres {
+  color: #00657E;
+  font-size: calc(18px + 1vw);
+  font-weight: bold; }
+
+/* -Main-galeria desktop - mas de 600px*/
+.Galeria {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00657E; }
+
+.TituloGaleria {
+  color: #BDDCD9;
+  font-weight: bold;
+  font-size: calc(14px + 1vw); }
+
+.GaleriaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 1200px;
+  background-color: #00657E;
+  justify-items: center; }
+
+#Img {
+  width: 80%;
+  height: auto;
+  border-radius: 15px; }
+
+.youtube {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #00657E;
+  height: 1000px; }
+
+.video {
+  height: 80%;
+  width: 80%;
+  margin-bottom: 60px; }
+
+.video1 {
+  width: 100%;
+  height: 100%; }
+
+/* -Main-revista desktop - mas de 600px* */
+.TodasRevistas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.Revista1, .Revista2, .Revista3, .Revista4 {
+  background-color: #83D0C8;
+  margin: 60px;
+  border-radius: 10px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw; }
+
+.Background {
+  background-color: #71A38C; }
+
+.Card {
+  margin: 40px; }
+  .Card p {
+    text-align: justify; }
+
+.RevistaTitulo {
+  color: #00657E;
+  font-size: calc(18px + 1vw);
+  font-weight: bold; }
+
+.RevistaDescripcion {
+  color: #00657E; }
+
+/* -Main-sobre mi desktop - mas de 600px* */
+.SobreMi {
+  background-color: #567945;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .SobreMi .TextoSobreMi {
+    width: 440px;
+    text-align: justify; }
+    .SobreMi .TextoSobreMi .SubTitulo {
+      display: flex;
+      justify-content: center; }
+
+.SubTitulo {
+  color: #F9D473;
+  font-weight: bold;
+  font-size: calc(14px + 1vw);
+  margin-bottom: 30px; }
+
+.TextoSobreMi {
+  color: #F9D473; }
+
+.ParrafoSobreMi {
+  width: 40vw; }
+
+/* -Main-contacto desktop - mas de 600px* */
+.Contacto {
+  color: #83D0C8;
+  font-weight: bold;
+  font-size: calc(14px + 1vw); }
+
+#floatingTextarea {
+  width: 100%;
+  height: 180px; }
+
+.form-control-form-controlStyle {
+  width: 600px;
+  height: 328px; }
+
+#input {
+  width: 40%vw;
+  height: 30px;
+  margin-right: 80px; }
+
+#ContactoTodo {
+  display: flex;
+  justify-content: center; }
+
+.TituloContacto {
+  display: flex;
+  justify-content: center; }
+
+.NombreTitulo {
+  color: #00657E;
+  font-weight: bold;
+  font-size: calc(14px + 1vw); }
+
+.NombreImput {
+  color: #00657E;
+  margin-bottom: 5px; }
+
+#ContactoCasilla {
+  width: 50%; }
+
+/* -Footer- */
+.bi-instagram {
+  font-size: 30px;
+  color: #353535; }
+
+.bi-facebook {
+  font-size: 30px;
+  color: #353535; }
+
+.bi-youtube {
+  font-size: 30px;
+  color: #353535; }
+
+.container-fluid {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#Redes {
+  margin-left: 20px;
+  margin-left: 20px; }
+
+/* -Main-index tablet - menos de 600px*/
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 25vw;
     height: auto;
     margin-right: 60px;
     margin-left: 40px;
-    margin-top: 10px;
-    display: inline-blocbk;
-   
-}
-
-
-header nav ul{
-    box-sizing: content-box;
-    display:flex;
-    justify-content:center;
-    list-style-type: none;   
-    margin-top: 1opx;
-    align-items: center;
-   
-    
-    
-}
-
-
-header nav ul li a{
-    color: #7B4F1F ;
-    margin-right: 3vw;
-    text-decoration: none;   
-    
-}
-
-
-/* -Main-index desktop - mas de 600px*/
-
-#PadreGrid{
+    margin-top: 2px;
+    display: inline-blocbk; }
+  #PadreGrid {
     display: grid;
-    grid-template-areas: "TextoPresentacion  ImagenPrincipal"
-                         "TituloTalleres TituloTalleres"
-                         "Talleres Talleres";
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 50% 7% 43%;
-    height: 1000px;
-    background-color: #71A38C;
-    
-}
-
-#Presentacion1{
-    grid-area: TextoPresentacion;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F67924;
-    
-}
-
-.TituloHome{
-    font-weight: bold;
-    color: #F9D473;
-    font-size:calc(15px + 2vw);
-    margin-bottom: 20px;
-}
-
-.SubTituloHome{
-    font-weight: bold;
-    color: #F9D473;
-    font-size:calc(10px + 1vw);
-    margin-bottom: 30px;
-}
-
-
-.TextoIntroduccion{
-    width: 70%;
-    text-align: center;
-    margin-top: 30px;
-    color: #F9D473;
-    font-size:calc(10px + 1vw);
-}
-
-#Presentacion2{
-    grid-area: ImagenPrincipal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#F67924
-}
-
-.Imagen1{
-    width: 55%;
-    height: auto;
-}
-
-
-#ImagenTaller{
-    grid-area: Talleres;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    margin-top: 5px;
-
-}
-
-
-.taller{
-
-    width: 90%;
-    height: auto;
-}
-
-#TallerconDescripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-}
-
-#Talleres1{
-    grid-area:  TituloTalleres;
-     display: flex;
-     justify-content: center;
-     align-items:flex-end;
-     padding-bottom: 5px;
-}
-
-#DescripcionTaller{
-    color: #00657E;
-    font-size:calc(13px + 1vw);
-    
-}
-
-#TituloTalleres{
-    color: #00657E;
-    font-size:calc(18px + 1vw);
-    font-weight: bold;
-}
-
-
-
-
-/* -Main-galeria desktop - mas de 600px*/
-
-.Galeria{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #00657E;
-}
-
-.TituloGaleria{
-    color: wheat;
-    font-weight: bold;
-    font-size:calc(14px + 1vw);
-}
-
-.GaleriaGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 1200px;
-    background-color: #00657E;
-    justify-items: center;
-}
-
-#Img{
-    width: 80%;
-    height: auto;
-    border-radius: 15px
-}
-
-.youtube{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #00657E;
-    height: 1000px;
-    
-    
-   
-}
-
-.video{
-    height: 80%;
-    width: 80%;
-    margin-bottom: 60px;
-}
-    
-
-.video1{
-    width: 100%;
-    height: 100%;
-}
-
-
-/* -Main-revista desktop - mas de 600px* */
-
-.TodasRevistas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-}
-
-.Revista1, .Revista2, .Revista3, .Revista4{
-    background-color: #83D0C8;
-    margin: 60px;
-    border-radius: 10px;
-    padding: 0px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    width: 80vw;
-}
-
-.Background{
-    background-color: #71A38C;
-}
-
-.Card{
-    margin: 40px;
-}
-
-.Card p{
-    text-align: justify;
-
-}
-
-
-.RevistaTitulo{
-    color: #00657E;
-    font-size:calc(18px + 1vw);
-    font-weight: bold;
-}
-
-.RevistaDescripcion{
-    color: #00657E;
-}
-
-
-
-/* -Main-sobre mi desktop - mas de 600px* */
-
-.SobreMi{
-    background-color: #567945;
-    height: 80vh;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-
-.SobreMi .TextoSobreMi{
-    width: 440px;
-    text-align:justify;
-}
-
-.SobreMi .TextoSobreMi .SubTitulo{
-    display: flex;
-    justify-content: center;
-}
-
-.SubTitulo{
-    color: wheat;
-    font-weight: bold;
-    font-size:calc(14px + 1vw);
-    margin-bottom: 30px;
-}
-
-.TextoSobreMi{
-    color: wheat;
-}
-
-.ParrafoSobreMi{
-    width: 40vw;
-}
-
-
-/* -Main-contacto desktop - mas de 600px* */
-
-.Contacto{
-    background-color:#83D0C8;
-    height: 100vh;
-    padding-left: 60px;
-    
-}
-
-#floatingTextarea{
-    width: 100%;
-    height:180px;
-}
-
-.form-control-form-controlStyle{
-    width: 600px;
-    height: 328px;
-}
-
-#input{
-    width: 40%vw;
-    height: 30px;
-    margin-right: 80px;
-}
-
-#ContactoTodo{
-    display: flex;
-    justify-content: center;
-}
-
-.TituloContacto{
-    display: flex;
-    justify-content: center;
-}
-
-.NombreTitulo{
-    color: #00657E;
-    font-weight: bold;
-    font-size:calc(14px + 1vw);
-}
-
-.NombreImput{
-    color: #00657E;
-    margin-bottom: 5px;
-}
-
-
-#ContactoCasilla{
-    width: 50%;
-    
-}
-
-
-
-/* -Footer- */
-
-
-
-
-
-
- .bi-instagram, .bi-facebook, .bi-youtube{
-    font-size: 30px;
-    color: #353535;
-    
-}
-
-
-
-
-.container-fluid{
-    height: 65px;
-}
-
-#Redes{
-    margin-left: 20px;
-    margin-left: 20px;
-}
-
-.container-fluid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-    
-
-
-/* -Main-index tablet - menos de 600px*/
-
-@media only screen and (max-width: 600px){
-
-    .logo {
-        width: 25vw;
-        height: auto;
-        margin-right: 60px;
-        margin-left: 40px;
-        margin-top: 2px;
-        display: inline-blocbk;
-    }
-    
-    #PadreGrid{
-        display: grid;
-    grid-template-areas: "ImagenPrincipal"
-                         "TextoPresentacion"  
-                          "TituloTalleres" 
-                          "Talleres";
-    grid-template-columns: 100% ;
+    grid-template-areas: "ImagenPrincipal" "TextoPresentacion" "TituloTalleres" "Talleres";
+    grid-template-columns: 100%;
     grid-template-rows: 15% 15% 2% 68%;
     height: 2400px;
-    background-color: #71A38C;
-    }
-        
-
-    
-        
-    #ImagenTaller{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    
-    .taller{
-        width: 56vw;
-        height: auto;
-    }
-
-
-
-/* -Main-Galeria tablet - menos de 600px*/
-    
-
-.GaleriaGrid{
-    display: grid; 
-    grid-template-columns: 100% ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    background-color: #71A38C; }
+  #ImagenTaller {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .taller {
+    width: 56vw;
+    height: auto; }
+  .SubTituloHome {
+    color: #F9D473;
+    font-weight: bold;
+    font-size: calc(14px + 1vw);
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw; }
+  /* -Main-Galeria tablet - menos de 600px*/
+  .GaleriaGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 3400px;
-    background-color: #00657E;
-    }
-
-#Img{
-        width: 60%;
-        height: auto;
-        border-radius: 15px
-    }
-
-
-/* -Main-revista tablet - menos de 600px*/
-
-.Revista1, .Revista2, .Revista3, .Revista4{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    padding-top: 60px;
-    }
- 
-    .ImgCard{
-        display: flex;
-        justify-content:center;
-    }
-
-    .ImagenCard{
-        width: 80%;
-        height: auto;
-    }
-
-
-/* -Main-sobre mi tablet - menos de 600px*/
-
-.SobreMi{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 120vh;
-   
-}
-
-.ImgSobreMi, .TextoSobreMi{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    
-   
-}
-
-.ImagenSobreMi, .ParrafoSobreMi{
-    width: 80%;
-    height: auto;
-}
-
-/* -Main-Contacto tablet - menos de 600px*/
-
-.Contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-}
-
-.contactoformulario{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-
-}
-
-.NombreTitulo{
-    font-size:calc(12px + 1vw);
-}
-    
-}
-
-
-
-/* -Main-index phone - menos de 400px*/
-
-@media only screen and (max-width: 400px){
-
-    #PadreGrid{
-        display: grid;
-    grid-template-areas: "ImagenPrincipal"
-                         "TextoPresentacion"  
-                          "TituloTalleres" 
-                          "Talleres";
-    grid-template-columns: 100% ;
-    grid-template-rows: 15% 15% 3% 67%;
-    height: 1800px;
-    background-color: #71A38C;
-    }
-    
-
-
-    
-    #ImagenTaller{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    
-    .taller{
-        width: 68vw;
-        height: auto;
-    }
-
-
-
-/* -Main-Galeria phone - menos de 400px*/
-    
-
-.GaleriaGrid{
-    display: grid; 
-    grid-template-columns: 100% ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    height: 2300px;
-    background-color: #00657E;
-    }
-
-#Img{
-        width: 60%;
-        height: auto;
-        border-radius: 10px
-    }
-
-
-/* -Main-revista phone - menos de 400px*/
-
-
-/* -Main-sobre mi phone - menos de 400px*/
-
-.SobreMi{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-   
-}
-
-.ImgSobreMi, .TextoSobreMi{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    
-   
-}
-
-.ImagenSobreMi, .ParrafoSobreMi{
+    background-color: #83D0C8; }
+  #Img {
     width: 60%;
     height: auto;
-}
-
-/* -Main-Contacto phone - menos de 400px*/
-
-.Contacto{
+    border-radius: 15px; }
+  /* -Main-revista tablet - menos de 600px*/
+  .Revista1, .Revista2, .Revista3, .Revista4, .Revista2, .Revista3, .Revista4 {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: space-around;
     align-items: center;
-}
-
-.contactoformulario{
+    padding-top: 60px; }
+  .ImgCard {
+    display: flex;
+    justify-content: center; }
+  .ImagenCard {
+    width: 80%;
+    height: auto; }
+  /* -Main-sobre mi tablet - menos de 600px*/
+  .SobreMi {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: space-around;
     align-items: center;
+    height: 120vh; }
+  .ImgSobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .TextoSobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .ImagenSobreMi {
+    width: 80%;
+    height: auto; }
+  .ParrafoSobreMi {
+    width: 80%;
+    height: auto; }
+  /* -Main-Contacto tablet - menos de 600px*/
+  .Contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contactoformulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .NombreTitulo {
+    font-size: calc(12px + 1vw); } }
 
-}
-
-.NombreTitulo{
-    font-size:calc(10px + 1vw);
-}
-    
-
-
-
-
-#floatingTextarea{
+/* -Main-index phone - menos de 400px*/
+@media only screen and (max-width: 400px) {
+  #PadreGrid {
+    display: grid;
+    grid-template-areas: "ImagenPrincipal" "TextoPresentacion" "TituloTalleres" "Talleres";
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 3% 67%;
+    height: 1800px;
+    background-color: #71A38C; }
+  #ImagenTaller {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .taller {
+    width: 68vw;
+    height: auto; }
+  .SubTituloHome {
+    color: #F9D473;
+    font-weight: bold;
+    font-size: calc(14px + 1vw);
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw; }
+  /* -Main-Galeria phone - menos de 400px*/
+  .GaleriaGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 2500px;
+    background-color: #83D0C8; }
+  #Img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px; }
+  /* -Main-revista phone - menos de 400px*/
+  /* -Main-sobre mi phone - menos de 400px*/
+  .SobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; }
+  .ImgSobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .TextoSobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .ImagenSobreMi {
+    width: 60%;
+    height: auto; }
+  .ParrafoSobreMi {
+    width: 60%;
+    height: auto; }
+  /* -Main-Contacto phone - menos de 400px*/
+  .Contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contactoformulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .NombreTitulo {
+    font-size: calc(10px + 1vw); }
+  #floatingTextarea {
     width: 100%;
-    height:120px;
-}
-
-.form-control-form-controlStyle{
+    height: 120px; }
+  .form-control-form-controlStyle {
     width: 300px;
-    height: 160px;
-}
-
-#input{
+    height: 160px; }
+  #input {
     width: 60%vw;
     height: 25px;
-    margin-right: 80px;
-}
-
-
-
-#ContactoCasilla{
-    width: 80%;
-    
-}
-
-
-
-
-
-}
+    margin-right: 80px; }
+  #ContactoCasilla {
+    width: 80%; } }
