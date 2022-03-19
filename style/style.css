@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0;
   padding: 0; }
@@ -53,21 +55,35 @@ header nav {
   font-weight: bold;
   color: #F9D473;
   font-size: calc(18px + 2vw);
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  text-align: center; }
 
 .SubTituloHome {
   color: #F9D473;
   font-weight: bold;
   font-size: calc(14px + 1vw);
+  font-family: Chilanka;
   margin-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  margin-left: 10px; }
 
 .TextoIntroduccion {
   width: 70%;
   text-align: center;
-  margin-top: 30px;
   color: #F9D473;
-  font-size: calc(10px + 1vw); }
+  font-size: calc(9px + 1vw);
+  font-family: roboto; }
+
+.TextoIntroduccion1 {
+  width: 70%;
+  text-align: center;
+  margin-top: 20px;
+  color: #F9D473;
+  font-size: calc(10px + 1vw);
+  font-weight: bold;
+  font-family: roboto; }
 
 #Presentacion2 {
   grid-area: ImagenPrincipal;
@@ -106,7 +122,9 @@ header nav {
 
 #DescripcionTaller {
   color: #00657E;
-  font-size: calc(13px + 1vw); }
+  font-weight: bold;
+  font-size: calc(14px + 1vw);
+  font-family: Chilanka; }
 
 #TituloTalleres {
   color: #00657E;
@@ -125,20 +143,22 @@ header nav {
 .TituloGaleria {
   color: #BDDCD9;
   font-weight: bold;
-  font-size: calc(14px + 1vw); }
+  font-size: calc(14px + 1vw);
+  font-family: Chilanka; }
 
 .GaleriaGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 1200px;
+  height: auto;
   background-color: #00657E;
   justify-items: center; }
 
 #Img {
   width: 80%;
   height: auto;
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin-bottom: 20px; }
 
 .youtube {
   display: flex;
@@ -172,7 +192,7 @@ header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 80vw; }
+  width: 70vw; }
 
 .Background {
   background-color: #71A38C; }
@@ -208,19 +228,20 @@ header nav {
   color: #F9D473;
   font-weight: bold;
   font-size: calc(14px + 1vw);
+  font-family: Chilanka;
   margin-bottom: 30px; }
 
 .TextoSobreMi {
-  color: #F9D473; }
-
-.ParrafoSobreMi {
-  width: 40vw; }
+  color: #F9D473;
+  width: 40vw;
+  margin-left: 20px; }
 
 /* -Main-contacto desktop - mas de 600px* */
 .Contacto {
   color: #83D0C8;
   font-weight: bold;
-  font-size: calc(14px + 1vw); }
+  font-size: calc(14px + 1vw);
+  font-family: Chilanka; }
 
 #floatingTextarea {
   width: 100%;
@@ -246,7 +267,8 @@ header nav {
 .NombreTitulo {
   color: #00657E;
   font-weight: bold;
-  font-size: calc(14px + 1vw); }
+  font-size: calc(14px + 1vw);
+  font-family: Chilanka; }
 
 .NombreImput {
   color: #00657E;
@@ -289,10 +311,10 @@ header nav {
     display: inline-blocbk; }
   #PadreGrid {
     display: grid;
-    grid-template-areas: "ImagenPrincipal" "TextoPresentacion" "TituloTalleres" "Talleres";
+    grid-template-areas: "TextoPresentacion"  "ImagenPrincipal" "TituloTalleres" "Talleres";
     grid-template-columns: 100%;
     grid-template-rows: 15% 15% 2% 68%;
-    height: 2400px;
+    height: auto;
     background-color: #71A38C; }
   #ImagenTaller {
     display: flex;
@@ -300,34 +322,42 @@ header nav {
     justify-content: space-around;
     align-items: center; }
   .taller {
-    width: 56vw;
+    width: 70vw;
     height: auto; }
   .SubTituloHome {
     color: #F9D473;
     font-weight: bold;
     font-size: calc(14px + 1vw);
+    font-family: Chilanka;
     margin-bottom: 30px;
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw; }
+  .TituloHome {
+    margin-top: 30px; }
+  .Imagen1 {
+    margin-bottom: 30px; }
+  #TituloTalleres {
+    margin-top: 30px; }
   /* -Main-Galeria tablet - menos de 600px*/
   .GaleriaGrid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 3400px;
-    background-color: #83D0C8; }
+    height: auto; }
   #Img {
-    width: 60%;
+    width: 90%;
     height: auto;
-    border-radius: 15px; }
+    border-radius: 15px;
+    margin-bottom: 40px; }
   /* -Main-revista tablet - menos de 600px*/
   .Revista1, .Revista2, .Revista3, .Revista4, .Revista2, .Revista3, .Revista4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-top: 60px; }
+    padding-top: 60px;
+    width: 80vw; }
   .ImgCard {
     display: flex;
     justify-content: center; }
@@ -353,7 +383,8 @@ header nav {
     align-items: center; }
   .ImagenSobreMi {
     width: 80%;
-    height: auto; }
+    height: auto;
+    margin-bottom: 50px; }
   .ParrafoSobreMi {
     width: 80%;
     height: auto; }
@@ -375,10 +406,10 @@ header nav {
 @media only screen and (max-width: 400px) {
   #PadreGrid {
     display: grid;
-    grid-template-areas: "ImagenPrincipal" "TextoPresentacion" "TituloTalleres" "Talleres";
+    grid-template-areas: "TextoPresentacion" "ImagenPrincipal" "TituloTalleres" "Talleres";
     grid-template-columns: 100%;
     grid-template-rows: 15% 15% 3% 67%;
-    height: 1800px;
+    height: auto;
     background-color: #71A38C; }
   #ImagenTaller {
     display: flex;
@@ -386,27 +417,24 @@ header nav {
     justify-content: space-around;
     align-items: center; }
   .taller {
-    width: 68vw;
+    width: 80vw;
     height: auto; }
   .SubTituloHome {
     color: #F9D473;
     font-weight: bold;
     font-size: calc(14px + 1vw);
+    font-family: Chilanka;
     margin-bottom: 30px;
     text-align: center;
     margin-left: 15vw;
     margin-right: 15vw; }
+  .TituloHome {
+    margin-top: 30px; }
+  .Imagen1 {
+    margin-bottom: 30px; }
+  #TituloTalleres {
+    margin-top: 30px; }
   /* -Main-Galeria phone - menos de 400px*/
-  .GaleriaGrid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 2500px;
-    background-color: #83D0C8; }
-  #Img {
-    width: 75%;
-    height: auto;
-    border-radius: 10px; }
   /* -Main-revista phone - menos de 400px*/
   /* -Main-sobre mi phone - menos de 400px*/
   .SobreMi {

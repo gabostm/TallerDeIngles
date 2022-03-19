@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 body {
@@ -23,6 +25,7 @@ $Color11: #353535;
     color: $ColorLetra;
 	font-weight: bold;
 	font-size: calc(14px + 1vw);
+	font-family: Chilanka	;
 }
 
 /* -Header-  */
@@ -81,27 +84,44 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: $Color0;
+	
+	
 }
 .TituloHome {
 	font-weight: bold;
 	color: $Color8;
 	font-size: calc(18px + 2vw);
 	margin-bottom: 20px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin-left: 10px;
+	text-align: center;
 }
 .SubTituloHome {
     @include Titulos($Color8);
     margin-bottom: 30px;
     text-align: center;
+	margin-left: 10px;
     
 }
 
 .TextoIntroduccion {
 	width: 70%;
 	text-align: center;
-	margin-top: 30px;
+	color: $Color8;
+	font-size: calc(9px + 1vw);
+	font-family: roboto;
+}
+
+.TextoIntroduccion1 {
+	width: 70%;
+	text-align: center;
+	margin-top: 20px;
 	color: $Color8;
 	font-size: calc(10px + 1vw);
+	font-weight: bold;
+	font-family: roboto;
 }
+
 #Presentacion2 {
 	grid-area: ImagenPrincipal;
 	display: flex;
@@ -138,13 +158,15 @@ header {
 	padding-bottom: 5px;
 }
 #DescripcionTaller {
-	color: $Color3;
-	font-size: calc(13px + 1vw);
+	@include Titulos($Color3);
+
 }
 #TituloTalleres {
+	
 	color: $Color3;
 	font-size: calc(18px + 1vw);
 	font-weight: bold;
+	
 }
 
 /* -Main-galeria desktop - mas de 600px*/
@@ -164,7 +186,7 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
-	height: 1200px;
+	height: auto;
 	background-color: $Color3;
 	justify-items: center;
 }
@@ -172,6 +194,7 @@ header {
 	width: 80%;
 	height: auto;
 	border-radius: 15px;
+	margin-bottom: 20px;
 }
 .youtube {
 	display: flex;
@@ -208,7 +231,7 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 80vw;
+	width: 70vw;
 }
 
 .Revista2{
@@ -254,6 +277,7 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+
 	.TextoSobreMi {
 		width: 440px;
 		text-align: justify;
@@ -263,17 +287,19 @@ header {
 		}
 	}
 }
+
+
+
 .SubTitulo {
-	color: $Color8;
-	font-weight: bold;
-	font-size: calc(14px + 1vw);
+	@include Titulos($Color8);
 	margin-bottom: 30px;
 }
 .TextoSobreMi {
 	color: $Color8;
-}
-.ParrafoSobreMi {
 	width: 40vw;
+	margin-left: 20px;
+
+	
 }
 
 /* -Main-contacto desktop - mas de 600px* */
@@ -303,9 +329,7 @@ header {
 	justify-content: center;
 }
 .NombreTitulo {
-	color: $Color3;
-	font-weight: bold;
-	font-size: calc(14px + 1vw);
+	@include Titulos($Color3);
 }
 .NombreImput {
 	color: $Color3;
@@ -353,10 +377,10 @@ header {
 	}
 	#PadreGrid {
 		display: grid;
-		grid-template-areas: "ImagenPrincipal" "TextoPresentacion" "TituloTalleres" "Talleres";
+		grid-template-areas: "TextoPresentacion"  "ImagenPrincipal" "TituloTalleres" "Talleres";
 		grid-template-columns: 100%;
 		grid-template-rows: 15% 15% 2% 68%;
-		height: 2400px;
+		height: auto;
 		background-color: $Color6;
 	}
 	#ImagenTaller {
@@ -366,7 +390,7 @@ header {
 		align-items: center;
 	}
 	.taller {
-		width: 56vw;
+		width: 70vw;
 		height: auto;
 	}
 
@@ -376,7 +400,21 @@ header {
         text-align: center;
         margin-left: 5vw;
         margin-right: 5vw;
+		
     }
+
+	.TituloHome{
+		margin-top: 30px;
+	}
+
+	.Imagen1{
+		margin-bottom: 30px;
+	}
+
+	#TituloTalleres{
+		margin-top: 30px;
+	}
+
 
 /* -Main-Galeria tablet - menos de 600px*/
 
@@ -384,13 +422,14 @@ header {
 		display: grid;
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		height: 3400px;
-		background-color: $Color4;
+	    height: auto;
+		
 	}
 	#Img {
-		width: 60%;
+		width: 90%;
 		height: auto;
 		border-radius: 15px;
+		margin-bottom: 40px;
 	}
 
 /* -Main-revista tablet - menos de 600px*/
@@ -401,6 +440,7 @@ header {
 		justify-content: space-around;
 		align-items: center;
 		padding-top: 60px;
+		width: 80vw;
 	}
 
     
@@ -437,6 +477,7 @@ header {
 	.ImagenSobreMi {
 		width: 80%;
 		height: auto;
+		margin-bottom: 50px;
 	}
 	.ParrafoSobreMi {
 		width: 80%;
@@ -468,10 +509,10 @@ header {
 @media only screen and (max-width: 400px) {
 	#PadreGrid {
 		display: grid;
-		grid-template-areas: "ImagenPrincipal" "TextoPresentacion" "TituloTalleres" "Talleres";
+		grid-template-areas:  "TextoPresentacion" "ImagenPrincipal" "TituloTalleres" "Talleres";
 		grid-template-columns: 100%;
 		grid-template-rows: 15% 15% 3% 67%;
-		height: 1800px;
+		height: auto;
 		background-color: $Color6;
 	}
 	#ImagenTaller {
@@ -481,7 +522,7 @@ header {
 		align-items: center;
 	}
 	.taller {
-		width: 68vw;
+		width: 80vw;
 		height: auto;
 	}
 
@@ -493,21 +534,19 @@ header {
         margin-right: 15vw;
     }
 
+	.TituloHome{
+		margin-top: 30px;
+	}
+
+	.Imagen1{
+		margin-bottom: 30px;
+	}
+
+	#TituloTalleres{
+		margin-top: 30px;
+	}
+
 /* -Main-Galeria phone - menos de 400px*/
-
-	.GaleriaGrid {
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		height: 2500px;
-		background-color: $Color4;
-	}
-	#Img {
-		width: 75%;
-		height: auto;
-		border-radius: 10px;
-	}
-
 /* -Main-revista phone - menos de 400px*/
 /* -Main-sobre mi phone - menos de 400px*/
 
