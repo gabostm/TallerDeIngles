@@ -267,7 +267,7 @@ header nav {
   height: 328px; }
 
 #input {
-  width: 40%vw;
+  width: 40vw;
   height: 30px;
   margin-right: 80px; }
 
@@ -390,7 +390,8 @@ header nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 150vh; }
+    height: 150vh;
+    width: 100%; }
   .ImgSobreMi {
     display: flex;
     flex-direction: column;
@@ -501,7 +502,7 @@ header nav {
     width: 300px;
     height: 160px; }
   #input {
-    width: 60%vw;
+    width: 60vw;
     height: 25px;
     margin-right: 80px; }
   #ContactoCasilla {
