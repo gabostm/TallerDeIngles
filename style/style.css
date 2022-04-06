@@ -354,6 +354,7 @@ header nav {
     margin-bottom: 30px; }
   #TituloTalleres {
     margin-top: 30px; }
+      
   /* -Main-Galeria tablet - menos de 600px*/
   .GaleriaGrid {
     display: grid;
@@ -389,7 +390,7 @@ header nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 120vh; }
+    height: 150vh; }
   .ImgSobreMi {
     display: flex;
     flex-direction: column;
@@ -453,6 +454,8 @@ header nav {
     margin-bottom: 30px; }
   #TituloTalleres {
     margin-top: 30px; }
+  #DescripcionTaller {
+    font-size: calc(14px + 1vw);}
   /* -Main-Galeria phone - menos de 400px*/
   /* -Main-revista phone - menos de 400px*/
   /* -Main-sobre mi phone - menos de 400px*/
@@ -461,7 +464,7 @@ header nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh; }
+    height: 150vh; }
   .ImgSobreMi {
     display: flex;
     flex-direction: column;
