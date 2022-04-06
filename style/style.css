@@ -391,7 +391,8 @@ header nav {
     justify-content: space-around;
     align-items: center;
     height: 150vh;
-    width: 100%; }
+     }
+  
   .ImgSobreMi {
     display: flex;
     flex-direction: column;
@@ -465,7 +466,9 @@ header nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 150vh; }
+    height: 160vh; 
+    width: auto;
+    }
   .ImgSobreMi {
     display: flex;
     flex-direction: column;
