@@ -32,7 +32,7 @@
                 <a class="nav-link"  href="../index.html" ><button type="button" class="btn btn-warning btn-sm" >INICIO</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="galeria.html" > <button type="button" class="btn btn-warning btn-sm" >GALERIA</button></a>
+                <a class="nav-link " href="galeria.html" > <button type="button" class="btn btn-warning btn-sm" >GALERÍA</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="revista.html" ><button type="button" class="btn btn-warning btn-sm"  >REVISTA</button></a>
@@ -62,16 +62,16 @@
           </div>
           <br>
           <div >
-            <form class="formulario">
+            <form class="formulario" action="https://formsubmit.co/veronicaferri@gmail.com" method="POST">
 
             <span class="Nombre">
               <label class="NombreImput" for="inputNombre">Nombre</label>
-              <input type="text" id="input"  class="form-control" placeholder="Nombre">
+              <input type="text" id="input" name="name"  class="form-control" placeholder="Nombre">
             </span>
             <br>
             <span class="Apellido"> 
               <label class="NombreImput" for="inputApellido" >Apellido</label>
-              <input type="text" id="input"  class="form-control" placeholder="Apellido">
+              <input type="text" id="input" name="surname" class="form-control" placeholder="Apellido">
             </span>
 
             <br>
@@ -79,12 +79,12 @@
 
             <span class="Email">
               <label class="NombreImput" for="inputEmail" >E-mail</label>
-              <input type="email"  id="input"  class="form-control" placeholder="Nombre@gmail.com">
+              <input type="email" name="email" id="input"  class="form-control" placeholder="Nombre@gmail.com">
             </span>
             <br>
             <span class="Telefono">
-                <label class="NombreImput" for="inputTelefono" >Telefono</label>
-                <input type="number"  id="input"  class="form-control" placeholder="4444-4444">
+                <label class="NombreImput" for="inputTelefono" >Teléfono</label>
+                <input type="number" name="number" id="input"  class="form-control" placeholder="4444-4444">
               </span>
 
               <br>
@@ -93,7 +93,7 @@
             <div class="Mensaje"> 
               <label class="NombreImput" for="InputMensaje" >Mensaje</label>
               <div class="form-floating">
-                <textarea  placeholder="Escribí tu mensaje acá..." id="floatingTextarea"></textarea>
+                <textarea  placeholder="Escribí tu mensaje acá..." name="textarea" id="floatingTextarea"></textarea>
                 
               </div>
             </div>
@@ -106,7 +106,7 @@
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="NombreImput" for="gridCheck">
-                    Deseo recibir informacion sobre novedades 
+                    Deseo recibir información sobre novedades 
                 </label>
               </div>
              
